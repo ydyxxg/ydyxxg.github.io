@@ -1,0 +1,240 @@
+@media(max-width: 1024px){
+    .resume .visitka p{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .resume .visitka .contacts, .myself, .languages{
+        font-size: 18px;
+        padding-left: 35px;
+    }
+
+    .resume .info{
+        column-gap: 0px;
+        font-size: 18px;
+        padding-right: 20px;
+    }
+
+    .resume .info .empty{
+        width: 400px;
+    }
+
+    .resume .info .information .header{
+        font-size: 24px;
+    }
+
+    .resume .info .information .name{
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 768px){
+    .resume .fio h1{
+        margin-top: 100px;
+        margin-left: 300px;
+        font-size: 44px;
+    }
+    
+    .resume .fio h2{
+        margin-left: 335px;
+        font-size: 32px;
+    }
+
+    .resume .visitka .photo{
+        margin-left: 17%;
+        width: 60%;
+    }
+
+    .resume .visitka .contacts, .myself, .languages{
+        row-gap: 5px;
+        font-size:16px;
+        padding-left: 10px;
+    }
+
+    .resume .info{
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 0px;
+        font-size: 20px;
+        margin-top: 50px;
+        padding-right: 20px;
+    }
+
+    .resume .info .empty{
+        width: 300px;
+    }
+}
+
+@media(max-width: 426px){
+
+    .resume .fio{
+        height: 350px;
+    }
+
+    .resume .burger, input[type=checkbox]{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+        right: 20px;
+    }
+
+    .resume .burger span {
+        width: 75%;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resume .burger span:nth-child(1){
+        top: 0;
+    }
+
+    .resume .burger span:nth-child(2){
+        top: 10px;
+    }
+
+    .resume .burger span:nth-child(3){
+        top: 20px;
+    }
+    
+    .resume input[type=checkbox] {
+        display: inline;
+        opacity: 0;
+    }
+
+    .resume .burger, input[type=checkbox]{
+        height: 50px;
+        width: 50px;
+    }
+
+    .resume input[type = checkbox]:checked ~ .visitka{
+        visibility: visible;
+        right: 0;
+    }
+
+    .resume .fio .photo_fio{
+        display: block;
+        margin-left: 27%;
+        margin-top: 20px;
+        width: 40%;
+        border-radius: 100%; 
+        border: 10px solid #27496D; 
+        animation: ava 1.5s infinite;
+    }
+
+    @keyframes ava {
+        0% {
+            box-shadow: 0 0 0 0 rgba(21, 153, 230, 0.4);
+        }
+        70% {
+            box-shadow: 0 0 0 20px rgba(228, 25, 49, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
+        }
+    }
+
+    .resume .fio h1{
+        margin-top: 20px;
+        margin-left: 18%;
+        font-size: 30px;
+    }
+    
+    .resume .fio h2{
+        margin-left: 25%;
+        font-size: 20px;
+    }
+
+    .resume .visitka{
+        z-index: 1;
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 20px;
+        align-content: flex-start;
+        justify-content: left;
+        padding: 20px 0 0 0px;
+        width: 50%;
+        height: 1000px;
+        position: absolute;
+        background-color: #3d4f6b;
+        opacity: 0.98;
+        margin-left: 0px;
+        margin-top: 0;
+        top: 0px;
+        left: 0px;
+        border-radius: 0px;
+        visibility: hidden;
+        transition: left 1s linear;
+    }
+
+    .resume .visitka hr{
+        display: none;
+    }
+
+    .resume .visitka p{
+        font-size: 22px;
+        margin-left: 10px;
+        border-bottom: 2px solid white;
+    }
+
+    .resume .visitka .contacts, .myself, .languages{
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 10px;
+        font-size: 15px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .resume .visitka .photo{
+        display: none;
+    }
+
+    .resume .info .empty{
+        width: 20px;
+    }
+}
+
+@media(max-width: 375px){
+    .resume .fio h1{
+        margin-left: 15%;
+    }
+    
+    .resume .fio h2{
+        margin-left: 22%;
+    }
+}
+
+@media(max-width: 320px){
+
+    .resume .fio{
+        height: 300px;
+    }
+
+    .resume .fio h1{
+        margin-left: 15%;
+        font-size: 26px;
+    }
+    
+    .resume .fio h2{
+        margin-left: 22%;
+        font-size: 16px;
+    }
+
+    .resume .visitka p{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .resume .visitka .contacts, .myself, .languages{
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 10px;
+        font-size: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
